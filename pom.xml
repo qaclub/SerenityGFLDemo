@@ -68,7 +68,6 @@
                 <version>2.18.1</version>
                 <configuration>
                     <includes>
-                        <include>**/authentication/**/*.java</include>
                         <include>**/viewer/**/*.java</include>
                     </includes>
                     <argLine>-Xmx512m</argLine>
