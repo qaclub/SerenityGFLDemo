@@ -1,7 +1,7 @@
 package com.geeksforless.website.viewer;
 
 import com.geeksforless.website.steps.ViewerSteps;
-import net.serenitybdd.junit.runners.SerenityRunner;
+import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.TestData;
@@ -14,7 +14,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-@RunWith(SerenityRunner.class) 
+@RunWith(SerenityParameterizedRunner.class) 
 public class ServiceSliderTest {
 	
 	@Managed
@@ -38,9 +38,9 @@ public class ServiceSliderTest {
                 {0,  "Programmers"},
                 {1,  "Web Developers"},
                 {2, "Quality Assurance"},
-                {4, "System Administrators"},
-                {5, "Tech Support"},
-                {6, "Call Center"}
+                {3, "System Administrators"},
+                {4, "Tech Support"},
+                {5, "Call Center"}
         });
     }
     

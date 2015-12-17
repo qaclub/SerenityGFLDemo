@@ -9,7 +9,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 @DefaultUrl("http://geeksforless.com/")
 public class HomePage extends PageObject {
 
-	@FindBy(css = "div#layout-slider sequence-pagination")
+	@FindBy(css = "ul.sequence-pagination li")
     public List<WebElementFacade> serviceSliderPageButtons;
 	
 	@FindBy(css = "div.bx-controls-direction a.bx-prev")
@@ -18,9 +18,7 @@ public class HomePage extends PageObject {
 	@FindBy(css = "div.bx-controls-direction a.bx-next")
 	public WebElementFacade partnerSliderNavRightButton;
 	
-	@FindBy(css = "ul.sequence-canvas li h2")
-	public List<WebElementFacade> serviceSliderHeaderTitles;
-	
-	
+	@FindBy(css = "ul.sequence-canvas li.animate-in h2")
+	public WebElementFacade serviceSliderHeaderTitle;
 	
 }
