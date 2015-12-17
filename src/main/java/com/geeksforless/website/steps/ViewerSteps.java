@@ -26,5 +26,15 @@ public class ViewerSteps extends ScenarioSteps {
 		homePage.partnerSliderNavLeftButton.click();
 	}
 	
+	@Step("Click on Service slider button #{0}")
+	public void click_on_service_slider_button_with_index(int index) {
+		homePage.serviceSliderPageButtons.get(index).click();
+	}
+	
+	@Step("Verify that Sliders title is changed to '{0}'")
+	public void verify_that_slider_title_is_changed(int index, String title) {
+		homePage.serviceSliderHeaderTitles.get(index).shouldContainText(title);
+		homePage.serviceSliderHeaderTitles.get(index).shouldBeVisible();
+	}
 	
 }

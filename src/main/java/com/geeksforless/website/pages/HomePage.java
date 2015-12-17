@@ -10,13 +10,16 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class HomePage extends PageObject {
 
 	@FindBy(css = "div#layout-slider sequence-pagination")
-    public List<WebElementFacade> sliderPageButtons;
+    public List<WebElementFacade> serviceSliderPageButtons;
 	
 	@FindBy(css = "div.bx-controls-direction a.bx-prev")
 	public WebElementFacade partnerSliderNavLeftButton;
 	
 	@FindBy(css = "div.bx-controls-direction a.bx-next")
 	public WebElementFacade partnerSliderNavRightButton;
+	
+	@FindBy(css = "ul.sequence-canvas li h2")
+	public List<WebElementFacade> serviceSliderHeaderTitles;
 	
 	
 	
