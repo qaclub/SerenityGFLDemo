@@ -4,7 +4,6 @@ import com.geeksforless.website.pages.HomePage;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.openqa.selenium.interactions.Actions;
 
 public class ViewerSteps extends ScenarioSteps {
 	
