@@ -17,7 +17,7 @@ import org.openqa.selenium.WebDriver;
 @RunWith(SerenityParameterizedRunner.class) 
 public class ServiceSliderTest {
 	
-	@Managed
+    @Managed
     WebDriver browserDriver;
 
     @Steps
