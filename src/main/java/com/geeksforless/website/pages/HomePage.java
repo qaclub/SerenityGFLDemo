@@ -10,7 +10,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class HomePage extends PageObject {
 
 	@FindBy(css = "ul.sequence-pagination li")
-    public List<WebElementFacade> serviceSliderPageButtons;
+        public List<WebElementFacade> serviceSliderPageButtons;
 	
 	@FindBy(css = "div.bx-controls-direction a.bx-prev")
 	public WebElementFacade partnerSliderNavLeftButton;
